@@ -18,3 +18,9 @@ models:
         tests:
           - accepted_values:
                 values: ['returned','completed', 'placed', 'return_pending']
+  - name: stg_stripe_payments
+    columns:
+      - name: total_amount_paid
+        tests:
+          - value_is_positive
+          - asserted_value_lessthan_60

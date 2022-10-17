@@ -11,4 +11,4 @@ orders as (
     from source
 )
 
-select * from orders
+select * from orders 
